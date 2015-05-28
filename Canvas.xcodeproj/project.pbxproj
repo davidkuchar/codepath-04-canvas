@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2F6D311B16B1330039EAE4 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2F6D301B16B1330039EAE4 /* CanvasViewController.swift */; };
 		554F1F9B1B13E36600096DB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F1F9A1B13E36600096DB1 /* AppDelegate.swift */; };
 		554F1F9D1B13E36600096DB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F1F9C1B13E36600096DB1 /* ViewController.swift */; };
 		554F1FA01B13E36600096DB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554F1F9E1B13E36600096DB1 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D2F6D301B16B1330039EAE4 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		554F1F951B13E36600096DB1 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F1F991B13E36600096DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554F1F9A1B13E36600096DB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				554F1F9A1B13E36600096DB1 /* AppDelegate.swift */,
 				554F1F9C1B13E36600096DB1 /* ViewController.swift */,
 				554F1F9E1B13E36600096DB1 /* Main.storyboard */,
+				4D2F6D301B16B1330039EAE4 /* CanvasViewController.swift */,
 				554F1FA11B13E36600096DB1 /* Images.xcassets */,
 				554F1FA31B13E36600096DB1 /* LaunchScreen.xib */,
 				554F1F981B13E36600096DB1 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554F1F9D1B13E36600096DB1 /* ViewController.swift in Sources */,
+				4D2F6D311B16B1330039EAE4 /* CanvasViewController.swift in Sources */,
 				554F1F9B1B13E36600096DB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				554F1FB61B13E36600096DB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		554F1FB71B13E36600096DB1 /* Build configuration list for PBXNativeTarget "CanvasTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				554F1FB91B13E36600096DB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
