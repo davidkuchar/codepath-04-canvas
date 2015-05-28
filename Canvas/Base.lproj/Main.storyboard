@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -16,50 +16,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smd-4G-HMa">
-                                <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Smd-4G-HMa">
+                                <rect key="frame" x="0.0" y="350" width="320" height="218"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="o4M-PV-XME">
-                                        <rect key="frame" x="30" y="30" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="o4M-PV-XME">
+                                        <rect key="frame" x="30" y="48" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ItO-pC-EME"/>
                                             <constraint firstAttribute="width" constant="50" id="yAb-io-Jjt"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="Ubi-y7-iAt">
-                                        <rect key="frame" x="119" y="24" width="50" height="50"/>
+                                        <rect key="frame" x="119" y="42" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Wk4-0l-I3C"/>
                                             <constraint firstAttribute="width" constant="50" id="ZOp-WZ-AXk"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="excited" translatesAutoresizingMaskIntoConstraints="NO" id="fmA-oO-Q3f">
-                                        <rect key="frame" x="235" y="24" width="50" height="50"/>
+                                        <rect key="frame" x="235" y="42" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="0ge-Se-40U"/>
                                             <constraint firstAttribute="height" constant="50" id="eiW-x3-KXj"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wink" translatesAutoresizingMaskIntoConstraints="NO" id="aSl-Yz-9jc">
-                                        <rect key="frame" x="35" y="99" width="50" height="50"/>
+                                        <rect key="frame" x="35" y="117" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="8S0-by-acf"/>
                                             <constraint firstAttribute="height" constant="50" id="qDM-J8-NYt"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="rSZ-A4-DAn">
-                                        <rect key="frame" x="119" y="106" width="50" height="50"/>
+                                        <rect key="frame" x="119" y="124" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="19E-gr-Baw"/>
                                             <constraint firstAttribute="height" constant="50" id="kqN-Do-a8s"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dead" translatesAutoresizingMaskIntoConstraints="NO" id="vG4-4Y-wzC">
-                                        <rect key="frame" x="244" y="99" width="50" height="50"/>
+                                        <rect key="frame" x="244" y="117" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="1a8-4U-Iqt"/>
                                             <constraint firstAttribute="height" constant="50" id="aR9-oY-Ylz"/>
                                         </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="G8w-Ue-1fX">
+                                        <rect key="frame" x="150" y="20" width="20" height="14"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -125,6 +128,7 @@
     </scenes>
     <resources>
         <image name="dead" width="60" height="60"/>
+        <image name="down_arrow" width="20" height="14"/>
         <image name="excited" width="60" height="60"/>
         <image name="happy" width="60" height="60"/>
         <image name="sad" width="60" height="60"/>
