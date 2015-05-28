@@ -16,11 +16,15 @@ class CanvasViewController: UIViewController {
     
     @IBOutlet weak var trayView: UIView!
     var trayOriginalCenter: CGPoint!
+    var trayUp: CGPoint!
+    var trayDown: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        trayUp
+//        trayDown = CGPoint(x:
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +44,11 @@ class CanvasViewController: UIViewController {
             var translation_y = point.y - trayOriginalCenter.y
            trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayOriginalCenter.y + translation_y)
         } else if panGestureRecognizer.state == UIGestureRecognizerState.Ended {
+            if velocity.y > 0 {
+                println("going down")
+            } else {
+                println("going up")
+            }
             println("Gesture ended at: \(point)")
         }
 
