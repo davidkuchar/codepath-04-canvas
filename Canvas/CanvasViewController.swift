@@ -23,8 +23,17 @@ class CanvasViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        trayUp
-//        trayDown = CGPoint(x:
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        trayOriginalCenter = trayView.center
+        println(trayView.center)
+        
+        var screenHeight = UIScreen.mainScreen().bounds.height
+        trayUp = CGPoint(x: trayOriginalCenter.x, y: screenHeight - (trayView.frame.height / 2))
+        trayDown = CGPoint(x: trayOriginalCenter.x, y: screenHeight + (trayView.frame.height / 2) - 50)
+        
+        trayView.center = trayDown
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,15 +51,28 @@ class CanvasViewController: UIViewController {
         } else if panGestureRecognizer.state == UIGestureRecognizerState.Changed {
             println("Gesture changed at: \(point)")
             var translation_y = point.y - trayOriginalCenter.y
-           trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayOriginalCenter.y + translation_y)
+            var newCenter = CGPoint(x: trayOriginalCenter.x, y: trayOriginalCenter.y + translation_y)
+            if newCenter.y <= trayUp.y {
+                trayView.center = newCenter
+            }
         } else if panGestureRecognizer.state == UIGestureRecognizerState.Ended {
             if velocity.y > 0 {
                 println("going down")
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.trayView.center = self.trayDown
+                })
+//                UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: <#UIViewAnimationOptions#>, animations: { () -> Void in
+//                    
+//                }, completion: { (<#Bool#>) -> Void in
+//                    self.trayView.center = self.trayDown
+//                })
             } else {
                 println("going up")
+                trayView.center = trayUp
             }
             println("Gesture ended at: \(point)")
         }
+        println(trayView.center)
 
     }
 
